@@ -31,7 +31,7 @@ Medi-Stargram 프로젝트의 컨벤션 및 기획을 정리한 문서입니다.
   - 예) 로그인 기능: `/features/auth`
   - 예) 상품 기능: `/features/product`
 
-- /`hooks`
+- `/hooks`
   공통 Custom Hook
 
 - `/routes`  
