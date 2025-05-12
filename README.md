@@ -14,6 +14,7 @@ Medi-Stargram 프로젝트의 컨벤션 및 기획을 정리한 문서입니다.
 
 - FrontEnd
   - React, JS+SWC, Vite 를 사용하여 개발환경 세팅
+  - Routing : React-router v6 이상
   - style : Styled-components
 - BackEnd
   - Serverless (Firebase)
@@ -25,28 +26,19 @@ Medi-Stargram 프로젝트의 컨벤션 및 기획을 정리한 문서입니다.
 
 ### 기본 폴더 설명
 
-- `/shared`  
-  프로젝트 전체에서 재사용하는 **기본 컴포넌트, 훅, 유틸리티**를 관리합니다.
-
-  - `ui`: 공통 UI 컴포넌트
-  - `hooks`: 공통 Custom Hook
-  - `utils`: 공통 함수
-  - `lib`: 기타 라이브러리 로직
-  - `config`: 설정 파일
-  - `types`: 공통 타입 정의
-
-- `/features`  
-  **기능 단위로** 코드(컴포넌트, API, 상태관리 등)를 그룹핑합니다.
-
+- `/components`  
+  **기능 단위로** 코드(컴포넌트, API, 상태관리 등)를 그룹핑합니다. 재사용하는 **기본 컴포넌트**를 관리합니다.
   - 예) 로그인 기능: `/features/auth`
   - 예) 상품 기능: `/features/product`
 
-- `/pages`  
+- /`hooks`
+  공통 Custom Hook
+
+- `/routes`  
   **라우팅 단위** 화면을 구성합니다.  
 
-- `/app`  
-  프로젝트 **초기 세팅** 파일을 관리합니다.  
-  (ex. 글로벌 상태 프로바이더, 라우터 설정 등)
+- `/store`  
+  스토어를 관리합니다.
 
 ### 설계 원칙
 
